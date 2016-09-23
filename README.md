@@ -12,7 +12,7 @@ Class for executing calls to cPanel UAPI
 
 ```
 #!php
-
+<?php
 require 'class.cpanel_uapi.php';
 ```
 
@@ -23,7 +23,7 @@ Initialize:
 
 ```
 #!php
-
+<?php
 $host_IP_address = '1.0.0.127';
 $cpanel_user = 'user';
 $cpanel_pass = 'pass';
@@ -35,7 +35,7 @@ Make a call:
 
 ```
 #!php
-
+<?php
 $module = 'Mysql'; // cPanel UAPI module
 $function = 'get_privileges_on_database'; // cPanel UAPI function
 $params = array(
