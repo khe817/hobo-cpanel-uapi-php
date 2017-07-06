@@ -10,9 +10,7 @@ Class for executing calls to cPanel UAPI
 ### How do I get set up? ###
 
 
-```
-#!php
-<?php
+```php
 require 'class.cpanel_uapi.php';
 ```
 
@@ -21,9 +19,7 @@ See examples.php for full examples.
 
 Initialize:
 
-```
-#!php
-<?php
+```php
 $host_IP_address = '1.0.0.127';
 $cpanel_user = 'user';
 $cpanel_pass = 'pass';
@@ -33,9 +29,7 @@ $cpanel_uapi = new CPanel_UAPI($host_IP_address, $cpanel_user, $cpanel_pass);
 
 Make a call:
 
-```
-#!php
-<?php
+```php
 $module = 'Mysql'; // cPanel UAPI module
 $function = 'get_privileges_on_database'; // cPanel UAPI function
 $params = array(
